@@ -39,7 +39,7 @@ Docker | AWS EC2 | Git | GitHub Actions
 ---
 
 ## 📫 Connect with Me  
-- 💼 [LinkedIn](www.linkedin.com/in/ivan-jimenez-83b40a2aa)  
+- 💼 [LinkedIn](http://www.linkedin.com/in/ivan-jimenez-83b40a2aa)  
 ---
 
 ⭐️ Feel free to explore my projects or reach out if you’d like to collaborate!  
