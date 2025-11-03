@@ -1,6 +1,7 @@
 # Hi, I'm Ivan Alexis Jimenez Cruz 👋  
 
 🎯 **Aspiring Data Scientist | AI & ML Enthusiast** 
+
 Passionate about using data and technology to solve problems, build efficient systems, and create meaningful impact.  
 
 ---
