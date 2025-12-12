@@ -1,0 +1,1281 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1117.1115                               -->
+<workbook original-version='18.1' source-build='2025.3.0 (20253.25.1117.1115)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Detailed_Statistics_Departures' inline='true' name='federated.1fl9ghe04n4k711cg9f1j184253d' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Detailed_Statistics_Departures' name='textscan.1q0jhgl1ib2g3r1atzrrt0tzrqfs'>
+            <connection class='textscan' directory='C:/Users/ivan4/Desktop/Tableau' filename='Detailed_Statistics_Departures.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.1q0jhgl1ib2g3r1atzrrt0tzrqfs' name='Detailed_Statistics_Departures.csv' table='[Detailed_Statistics_Departures#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Carrier Code' ordinal='0' />
+            <column datatype='date' name='Date (MM/DD/YYYY)' ordinal='1' />
+            <column datatype='integer' name='Flight Number' ordinal='2' />
+            <column datatype='string' name='Tail Number' ordinal='3' />
+            <column datatype='string' name='Destination Airport' ordinal='4' />
+            <column datatype='datetime' name='Scheduled departure time' ordinal='5' />
+            <column datatype='datetime' name='Actual departure time' ordinal='6' />
+            <column datatype='integer' name='Scheduled elapsed time (Minutes)' ordinal='7' />
+            <column datatype='integer' name='Actual elapsed time (Minutes)' ordinal='8' />
+            <column datatype='integer' name='Departure delay (Minutes)' ordinal='9' />
+            <column datatype='datetime' name='Wheels-off time' ordinal='10' />
+            <column datatype='integer' name='Taxi-Out time (Minutes)' ordinal='11' />
+            <column datatype='integer' name='Delay Carrier (Minutes)' ordinal='12' />
+            <column datatype='integer' name='Delay Weather (Minutes)' ordinal='13' />
+            <column datatype='integer' name='Delay National Aviation System (Minutes)' ordinal='14' />
+            <column datatype='integer' name='Delay Security (Minutes)' ordinal='15' />
+            <column datatype='integer' name='Delay Late Aircraft Arrival (Minutes)' ordinal='16' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Carrier Code</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Carrier Code]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Carrier Code</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date (MM/DD/YYYY)</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date (MM/DD/YYYY)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Date (MM/DD/YYYY)</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Flight Number</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Flight Number]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Flight Number</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Tail Number</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Tail Number]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Tail Number</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Destination Airport</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Destination Airport]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Destination Airport</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scheduled departure time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Scheduled departure time]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Scheduled departure time</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual departure time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Actual departure time]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Actual departure time</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Scheduled elapsed time (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Scheduled elapsed time (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Scheduled elapsed time (Minutes)</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Actual elapsed time (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Actual elapsed time (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Actual elapsed time (Minutes)</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Departure delay (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Departure delay (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Departure delay (Minutes)</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Wheels-off time</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[Wheels-off time]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Wheels-off time</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Taxi-Out time (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Taxi-Out time (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Taxi-Out time (Minutes)</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay Carrier (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delay Carrier (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Delay Carrier (Minutes)</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay Weather (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delay Weather (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Delay Weather (Minutes)</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay National Aviation System (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delay National Aviation System (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Delay National Aviation System (Minutes)</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay Security (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delay Security (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Delay Security (Minutes)</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Delay Late Aircraft Arrival (Minutes)</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Delay Late Aircraft Arrival (Minutes)]</local-name>
+            <parent-name>[Detailed_Statistics_Departures.csv]</parent-name>
+            <remote-alias>Delay Late Aircraft Arrival (Minutes)</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[:Measure Names]' role='dimension' type='nominal'>
+        <aliases>
+          <alias key='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Carrier (Minutes):qk]&quot;' value='Delay Carrier' />
+          <alias key='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Late Aircraft Arrival (Minutes):qk]&quot;' value='Delay Late Aircraft Arrival' />
+          <alias key='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay National Aviation System (Minutes):qk]&quot;' value='Delay National Aviation System' />
+          <alias key='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Security (Minutes):qk]&quot;' value='Delay Security' />
+          <alias key='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Weather (Minutes):qk]&quot;' value='Delay Weather' />
+        </aliases>
+      </column>
+      <column datatype='integer' name='[Actual elapsed time (Minutes)]' role='measure' type='quantitative' />
+      <column caption='Total Delay (Minutes)' datatype='integer' name='[Calculation_0221018007146496]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Delay Carrier (Minutes)] + [Delay Late Aircraft Arrival (Minutes)] + [Delay National Aviation System (Minutes)] + [Delay Security (Minutes)] + [Delay Weather (Minutes)]' />
+      </column>
+      <column caption='Destination (COUNT)' datatype='integer' name='[Calculation_0221018017288193]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([Destination Airport])' />
+      </column>
+      <column datatype='string' name='[Carrier Code]' role='dimension' type='nominal' />
+      <column datatype='integer' name='[Delay Carrier (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Delay Late Aircraft Arrival (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Delay National Aviation System (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Delay Security (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Delay Weather (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Departure delay (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Flight Number]' role='dimension' type='ordinal' />
+      <column aggregation='Hour' datatype='datetime' name='[Scheduled departure time]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Scheduled elapsed time (Minutes)]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Taxi-Out time (Minutes)]' role='measure' type='quantitative' />
+      <column aggregation='None' datatype='integer' name='[Total Delay (Minutes) (bin)]' role='dimension' type='quantitative'>
+        <calculation class='bin' decimals='2' formula='[Calculation_0221018007146496]' peg='0' size='155' />
+      </column>
+      <column aggregation='Hour' datatype='datetime' name='[Wheels-off time]' role='dimension' type='ordinal' />
+      <column caption='Detailed_Statistics_Departures.csv' datatype='table' name='[__tableau_internal_object_id__].[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]' role='measure' type='quantitative' />
+      <column-instance column='[__tableau_internal_object_id__].[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]' derivation='Count' name='[__tableau_internal_object_id__].[cnt:Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Carrier Code]' derivation='None' name='[none:Carrier Code:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Actual elapsed time (Minutes)]' derivation='Sum' name='[sum:Actual elapsed time (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Calculation_0221018007146496]' derivation='Sum' name='[sum:Calculation_0221018007146496:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delay Carrier (Minutes)]' derivation='Sum' name='[sum:Delay Carrier (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delay Late Aircraft Arrival (Minutes)]' derivation='Sum' name='[sum:Delay Late Aircraft Arrival (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delay National Aviation System (Minutes)]' derivation='Sum' name='[sum:Delay National Aviation System (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delay Security (Minutes)]' derivation='Sum' name='[sum:Delay Security (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Delay Weather (Minutes)]' derivation='Sum' name='[sum:Delay Weather (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Departure delay (Minutes)]' derivation='Sum' name='[sum:Departure delay (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Scheduled elapsed time (Minutes)]' derivation='Sum' name='[sum:Scheduled elapsed time (Minutes):qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Taxi-Out time (Minutes)]' derivation='Sum' name='[sum:Taxi-Out time (Minutes):qk]' pivot='key' type='quantitative' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/ivan4/AppData/Local/Temp/TableauTemp/#TableauTemp_0n26fda121y6kv1816vwk1fdlulp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='12/12/2025 04:13:29 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Carrier Code</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Carrier Code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Carrier Code</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date (MM/DD/YYYY)</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date (MM/DD/YYYY)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date (MM/DD/YYYY)</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>3761</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Flight Number</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Flight Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Flight Number</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1404</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Tail Number</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Tail Number]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Tail Number</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3085</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Destination Airport</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Destination Airport]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Destination Airport</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>37</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Scheduled departure time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Scheduled departure time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Scheduled departure time</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>2379</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actual departure time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Actual departure time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actual departure time</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>3847</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Scheduled elapsed time (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Scheduled elapsed time (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Scheduled elapsed time (Minutes)</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>376</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Actual elapsed time (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Actual elapsed time (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Actual elapsed time (Minutes)</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>630</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Departure delay (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Departure delay (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Departure delay (Minutes)</remote-alias>
+              <ordinal>9</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>639</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Wheels-off time</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[Wheels-off time]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Wheels-off time</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>3934</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Taxi-Out time (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Taxi-Out time (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Taxi-Out time (Minutes)</remote-alias>
+              <ordinal>11</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay Carrier (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delay Carrier (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay Carrier (Minutes)</remote-alias>
+              <ordinal>12</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>413</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay Weather (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delay Weather (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay Weather (Minutes)</remote-alias>
+              <ordinal>13</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>702</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay National Aviation System (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delay National Aviation System (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay National Aviation System (Minutes)</remote-alias>
+              <ordinal>14</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>361</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay Security (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delay Security (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay Security (Minutes)</remote-alias>
+              <ordinal>15</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>204</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Delay Late Aircraft Arrival (Minutes)</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[Delay Late Aircraft Arrival (Minutes)]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Delay Late Aircraft Arrival (Minutes)</remote-alias>
+              <ordinal>16</ordinal>
+              <family>Detailed_Statistics_Departures.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>466</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Carrier Code:nk]' type='palette'>
+            <map to='#5555ff'>
+              <bucket>&quot;B6&quot;</bucket>
+            </map>
+            <map to='#e70004'>
+              <bucket>&quot;AA&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Scheduled elapsed time (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d]&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Carrier (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Departure delay (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Security (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Taxi-Out time (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Actual elapsed time (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Weather (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay National Aviation System (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Late Aircraft Arrival (Minutes):qk]&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Calculation_0221018007146496:qk]&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[__tableau_internal_object_id__].[cnt:Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='Detailed_Statistics_Departures.csv' id='Detailed_Statistics_Departures.csv_5C26CD751CDB4AA4BC36B30C3FF20947'>
+            <properties context=''>
+              <relation connection='textscan.1q0jhgl1ib2g3r1atzrrt0tzrqfs' name='Detailed_Statistics_Departures.csv' table='[Detailed_Statistics_Departures#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Carrier Code' ordinal='0' />
+                  <column datatype='date' name='Date (MM/DD/YYYY)' ordinal='1' />
+                  <column datatype='integer' name='Flight Number' ordinal='2' />
+                  <column datatype='string' name='Tail Number' ordinal='3' />
+                  <column datatype='string' name='Destination Airport' ordinal='4' />
+                  <column datatype='datetime' name='Scheduled departure time' ordinal='5' />
+                  <column datatype='datetime' name='Actual departure time' ordinal='6' />
+                  <column datatype='integer' name='Scheduled elapsed time (Minutes)' ordinal='7' />
+                  <column datatype='integer' name='Actual elapsed time (Minutes)' ordinal='8' />
+                  <column datatype='integer' name='Departure delay (Minutes)' ordinal='9' />
+                  <column datatype='datetime' name='Wheels-off time' ordinal='10' />
+                  <column datatype='integer' name='Taxi-Out time (Minutes)' ordinal='11' />
+                  <column datatype='integer' name='Delay Carrier (Minutes)' ordinal='12' />
+                  <column datatype='integer' name='Delay Weather (Minutes)' ordinal='13' />
+                  <column datatype='integer' name='Delay National Aviation System (Minutes)' ordinal='14' />
+                  <column datatype='integer' name='Delay Security (Minutes)' ordinal='15' />
+                  <column datatype='integer' name='Delay Late Aircraft Arrival (Minutes)' ordinal='16' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_354E299FE60440E0BC4BFEC67B0E7CFC]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='Delay Time by Date' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Carrier Code' />
+        <param name='target' value='Delay Time by Date' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Delay Time by Date'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Delay Time by date</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Detailed_Statistics_Departures' name='federated.1fl9ghe04n4k711cg9f1j184253d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fl9ghe04n4k711cg9f1j184253d'>
+            <column caption='Total Delay (Minutes)' datatype='integer' name='[Calculation_0221018007146496]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Delay Carrier (Minutes)] + [Delay Late Aircraft Arrival (Minutes)] + [Delay National Aviation System (Minutes)] + [Delay Security (Minutes)] + [Delay Weather (Minutes)]' />
+            </column>
+            <column datatype='string' name='[Carrier Code]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date (MM/DD/YYYY)]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Delay Carrier (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Late Aircraft Arrival (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay National Aviation System (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Security (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Weather (Minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[Date (MM/DD/YYYY)]' derivation='Month' name='[mn:Date (MM/DD/YYYY):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Carrier Code]' derivation='None' name='[none:Carrier Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0221018007146496]' derivation='Sum' name='[sum:Calculation_0221018007146496:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date (MM/DD/YYYY)]' derivation='Month-Trunc' name='[tmn:Date (MM/DD/YYYY):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fl9ghe04n4k711cg9f1j184253d].[mn:Date (MM/DD/YYYY):ok]'>
+            <groupfilter function='level-members' level='[mn:Date (MM/DD/YYYY):ok]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.1fl9ghe04n4k711cg9f1j184253d].[mn:Date (MM/DD/YYYY):ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Calculation_0221018007146496:qk]</rows>
+        <cols>[federated.1fl9ghe04n4k711cg9f1j184253d].[tmn:Date (MM/DD/YYYY):ok]</cols>
+      </table>
+      <simple-id uuid='{0EE74894-4767-405D-AA47-8B1C11C97441}' />
+    </worksheet>
+    <worksheet name='Delay Time per Year'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Delay Time per Year</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Detailed_Statistics_Departures' name='federated.1fl9ghe04n4k711cg9f1j184253d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fl9ghe04n4k711cg9f1j184253d'>
+            <column datatype='integer' name='[Actual elapsed time (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Carrier Code]' role='dimension' type='nominal' />
+            <column datatype='date' name='[Date (MM/DD/YYYY)]' role='dimension' type='ordinal' />
+            <column-instance column='[Carrier Code]' derivation='None' name='[none:Carrier Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Actual elapsed time (Minutes)]' derivation='Sum' name='[sum:Actual elapsed time (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date (MM/DD/YYYY)]' derivation='Year' name='[yr:Date (MM/DD/YYYY):ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Actual elapsed time (Minutes):qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fl9ghe04n4k711cg9f1j184253d].[yr:Date (MM/DD/YYYY):ok]</rows>
+        <cols>[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk]</cols>
+      </table>
+      <simple-id uuid='{69E60A76-CA0A-48B8-AFB5-32ECA9ED1309}' />
+    </worksheet>
+    <worksheet name='Delay by Months'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Delays by Months</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Detailed_Statistics_Departures' name='federated.1fl9ghe04n4k711cg9f1j184253d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fl9ghe04n4k711cg9f1j184253d'>
+            <column datatype='date' name='[Date (MM/DD/YYYY)]' role='dimension' type='ordinal' />
+            <column datatype='integer' name='[Delay Late Aircraft Arrival (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay National Aviation System (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Security (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Weather (Minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[Date (MM/DD/YYYY)]' derivation='Month' name='[mn:Date (MM/DD/YYYY):ok]' pivot='key' type='ordinal' />
+            <column-instance column='[Delay Late Aircraft Arrival (Minutes)]' derivation='Sum' name='[sum:Delay Late Aircraft Arrival (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay National Aviation System (Minutes)]' derivation='Sum' name='[sum:Delay National Aviation System (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay Security (Minutes)]' derivation='Sum' name='[sum:Delay Security (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay Weather (Minutes)]' derivation='Sum' name='[sum:Delay Weather (Minutes):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Late Aircraft Arrival (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay National Aviation System (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Security (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Weather (Minutes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.1fl9ghe04n4k711cg9f1j184253d].[Multiple Values]' scope='rows' value='Delay (Minutes)' />
+            <format attr='width' field='[federated.1fl9ghe04n4k711cg9f1j184253d].[Multiple Values]' value='72' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1fl9ghe04n4k711cg9f1j184253d].[Multiple Values]</rows>
+        <cols>([federated.1fl9ghe04n4k711cg9f1j184253d].[mn:Date (MM/DD/YYYY):ok] / [federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{1F04A0EC-9440-47C7-A55D-931596E4EDBE}' />
+    </worksheet>
+    <worksheet name='Total Delay per Destination'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Delay per Destination</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Detailed_Statistics_Departures' name='federated.1fl9ghe04n4k711cg9f1j184253d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fl9ghe04n4k711cg9f1j184253d'>
+            <column caption='Total Delay (Minutes)' datatype='integer' name='[Calculation_0221018007146496]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='[Delay Carrier (Minutes)] + [Delay Late Aircraft Arrival (Minutes)] + [Delay National Aviation System (Minutes)] + [Delay Security (Minutes)] + [Delay Weather (Minutes)]' />
+            </column>
+            <column datatype='integer' name='[Delay Carrier (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Late Aircraft Arrival (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay National Aviation System (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Security (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Weather (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Destination Airport]' role='dimension' type='nominal' />
+            <column-instance column='[Destination Airport]' derivation='None' name='[none:Destination Airport:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_0221018007146496]' derivation='Sum' name='[sum:Calculation_0221018007146496:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Destination Airport:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Calculation_0221018007146496:qk]' shelf='rows' />
+          </shelf-sorts>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Destination Airport:nk]' value='156' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Calculation_0221018007146496:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Destination Airport:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{A0A345CE-36FB-41E0-A9A6-63705C1A3B77}' />
+    </worksheet>
+    <worksheet name='Total Time by Delay Type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Time by Delay Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Detailed_Statistics_Departures' name='federated.1fl9ghe04n4k711cg9f1j184253d' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1fl9ghe04n4k711cg9f1j184253d'>
+            <column datatype='string' name='[Carrier Code]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Delay Carrier (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Late Aircraft Arrival (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay National Aviation System (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Security (Minutes)]' role='measure' type='quantitative' />
+            <column datatype='integer' name='[Delay Weather (Minutes)]' role='measure' type='quantitative' />
+            <column-instance column='[Carrier Code]' derivation='None' name='[none:Carrier Code:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Delay Carrier (Minutes)]' derivation='Sum' name='[sum:Delay Carrier (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay Late Aircraft Arrival (Minutes)]' derivation='Sum' name='[sum:Delay Late Aircraft Arrival (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay National Aviation System (Minutes)]' derivation='Sum' name='[sum:Delay National Aviation System (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay Security (Minutes)]' derivation='Sum' name='[sum:Delay Security (Minutes):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Delay Weather (Minutes)]' derivation='Sum' name='[sum:Delay Weather (Minutes):qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]'>
+            <groupfilter function='union' user:ui-domain='relevant' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Carrier (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Late Aircraft Arrival (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay National Aviation System (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Security (Minutes):qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.1fl9ghe04n4k711cg9f1j184253d].[sum:Delay Weather (Minutes):qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]' value='-90' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' id='refline0' value='#000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1fl9ghe04n4k711cg9f1j184253d].[Multiple Values]</rows>
+        <cols>([federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk] / [federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names])</cols>
+      </table>
+      <simple-id uuid='{53708D6E-1C5C-4383-BD0A-64F9EEF27352}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98002' id='7' param='horz' type-v2='layout-flow' w='99152' x='424' y='999'>
+            <zone h='98002' id='5' type-v2='layout-basic' w='99152' x='424' y='999'>
+              <zone h='98002' id='3' name='Delay Time by Date' w='48102' x='51474' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49001' id='10' name='Total Time by Delay Type' w='39675' x='11799' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='19887' id='12' name='Delay Time per Year' w='11375' x='424' y='12543'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='49001' id='13' name='Delay by Months' w='39675' x='11799' y='50000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='66571' id='14' name='Total Delay per Destination' w='11375' x='424' y='32430'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='11544' id='9' name='Delay Time by Date' pane-specification-id='0' param='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk]' type-v2='color' w='11375' x='424' y='999'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1400' minheight='1400' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98642' id='15' param='vert' type-v2='layout-flow' w='99272' x='364' y='679'>
+                <zone fixed-size='280' h='49321' id='10' is-fixed='true' name='Total Time by Delay Type' w='39724' x='11753' y='679'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='98642' id='3' is-fixed='true' name='Delay Time by Date' w='48159' x='51477' y='679'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='11620' id='9' name='Delay Time by Date' pane-specification-id='0' param='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk]' type-v2='color' w='11389' x='364' y='679'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='153' h='20017' id='12' is-fixed='true' name='Delay Time per Year' w='11389' x='364' y='12299'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='67005' id='14' is-fixed='true' name='Total Delay per Destination' w='11389' x='364' y='32316'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49321' id='13' is-fixed='true' name='Delay by Months' w='39724' x='11753' y='50000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{8BDB7911-57EB-4FB1-9144-BB9E1DEDDFC6}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' show-side-pane='false' source-height='37'>
+    <window class='worksheet' name='Delay Time by Date'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1fl9ghe04n4k711cg9f1j184253d].[mn:Date (MM/DD/YYYY):ok]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1fl9ghe04n4k711cg9f1j184253d].[none:Carrier Code:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{41539A47-01F5-404E-A07A-4F23E8833EA1}' />
+    </window>
+    <window class='worksheet' name='Total Time by Delay Type'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{9A12C5D2-B77A-442F-80B8-B2A557F551F9}' />
+    </window>
+    <window class='worksheet' name='Delay Time per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{8589E296-96E1-49AD-9834-774118C38A42}' />
+    </window>
+    <window class='worksheet' name='Delay by Months'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1fl9ghe04n4k711cg9f1j184253d].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{C5959987-520B-443E-8365-7F7A267EA226}' />
+    </window>
+    <window class='worksheet' name='Total Delay per Destination'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{AF0D82F5-280F-4A83-A90D-A3A541660E59}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Delay Time by Date'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Delay Time per Year' />
+        <viewpoint name='Delay by Months'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Total Delay per Destination' />
+        <viewpoint name='Total Time by Delay Type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='13' />
+      <simple-id uuid='{27C20D10-E7DA-4D1B-897E-60CB88AE0F7A}' />
+    </window>
+  </windows>
+</workbook>
