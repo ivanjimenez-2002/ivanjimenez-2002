@@ -1,0 +1,39 @@
+This dataset is a snapshot from October 2022 of all 48 homes in a section of a neighborhood nearby a large university in 
+Central Florida. All of the homes are single family homes featuring a garage, a driveway, and a fenced-in backyard. 
+Data was gathered by hand (keyboard) via a collection of sites, including Zillow, Realtor, Redfin, Trulia, and Orange 
+County Property Appraiser. All homes were built in the same year in the early 2000's and feature central air and all 
+other utilities typical of contemporary suburban homes in the United States. The area is close to a university and a large 
+portion of renters are college students and young professionals, as well as families and older adults.
+
+There are 30 columns:
+
+HID: House ID, a unique identifier for each house (int from 1 to 48, not the actual address number)
+-Sqft: The Square Footage of the Interior of the house (int)
+-LandSqft: The Total Square Footage of the land (int)
+-Neighbors: The number of homes directly adjacent to each house (int)
+-Stories: The number of stories in each house (int)
+-Pool: Does the house have a pool (int, 0 for 'No', 1 for 'Yes')
+-Bedrooms: The number of bedrooms in each house (int)
+-Bathrooms: The number of bathrooms (full or half) in each house (int)
+-DateLastSold: The date on which the house was last sold (datetime)
+-PropertyTaxes2022: The annual property taxes for 2022 (float)
+-OwnedByBank: Is the house owned by a bank (int, 0 for 'No', 1 for 'Yes')
+-OuterPortion: Is the house on the Outer Portion of the Neighborhood (int, 0 for 'No', 1 for 'Yes')
+-NextToLoudRoad: Is the house directly adjacent to a loud road (int, 0 for 'No', 1 for 'Yes')
+-PriceLastSold: Price that the house was last sold for (float)
+-Zestimate: Zillow's Price Estimate for the house (float)
+-RentZestimate: Zillow's Estimate for the Monthly Price of rent for the house (float)
+-RealtorcomEstimate: Realtor dot com's Estimate for the house (float)
+-RedfinEstimate: Redfin's Estimate for the house (float)
+-TruliaEstimate: Trulia's Estimate for the house (float)
+-OCPALandValue2022: The Land Value on the county's 2022 records (float)
+-OCPABuildingValue2022: The Building Value on the county's 2022 records (float)
+-OCPAFeaturesValue2022: The Features Value on the county's 2022 records (float)
+-OCPAMarketValue2022: The Market Value on the county's 2022 records (float)
+-OCPAAssessedValue2022: The Assessed Value on the county's 2022 records (float), AKA what homeowners are taxed on
+-OCPALandValue2021: The Land Value on the county's 2021 records (float)
+-OCPABuildingValue2021: The Building Value on the county's 2021 records (float)
+-OCPAFeaturesValue2021: The Features Value on the county's 2021 records (float)
+-OCPAMarketValue2021: The Market Value on the county's 2021 records (float)
+-OCPAAssessedValue2021: The Assessed Value on the county's 2021 records (float), AKA what homeowners are taxed on
+-Notes: any notes on any of the homes (str)

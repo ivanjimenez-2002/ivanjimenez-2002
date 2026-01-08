@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Central Florida House Predictor</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="img">
+        <img src="image.jpg" alt="Background Image">
+    </div>
+    <form class="form">
+        <h2>Square Footage</h2>
+        <input class="area" type="email" id="uiSqft" class="floatLabel" name="Squareft" value="1000" required>
+        <h2>Land Square Footage</h2>
+        <input class="area" type="email" id="uiLandSqft" class="floatLabel" name="LandSquareft" value="2000" required>
+        <h2>Neighbors</h2>
+        <div class="switch-field">
+            <input type="radio" id="uiNeighbors1" name="uiNeighbors" value="1" checked/>
+            <label for="uiNeighbors1">1</label>
+            <input type="radio" id="uiNeighbors2" name="uiNeighbors" value="2"/>
+            <label for="uiNeighbors2">2</label>
+            <input type="radio" id="uiNeighbors3" name="uiNeighbors" value="3"/>
+            <label for="uiNeighbors3">3</label>
+        </div>
+        <h2>Stories</h2>
+        <div class="switch-field">
+            <input type="radio" id="uiStories1" name="uiStories" value="1" checked/>
+            <label for="uiStories1">1</label>
+            <input type="radio" id="uiStories2" name="uiStories" value="2"/>
+            <label for="uiStories2">2</label>
+        </div>
+        <h2>Pool</h2>
+        <div class="switch-field">
+            <input type="radio" id="uiPool1" name="uiPool" value="1" checked/>
+            <label for="uiPool1">Yes</label>
+            <input type="radio" id="uiPool2" name="uiPool" value="0"/>
+            <label for="uiPool2">No</label>
+        </div>
+        <h2>Bedrooms</h2>
+        <div class="switch-field">
+            <input type="radio" id="uiBedrooms1" name="uiBedrooms" value="1" checked/>
+            <label for="uiBedrooms1">1</label>
+            <input type="radio" id="uiBedrooms2" name="uiBedrooms" value="2"/>
+            <label for="uiBedrooms2">2</label>
+            <input type="radio" id="uiBedrooms3" name="uiBedrooms" value="3"/>
+            <label for="uiBedrooms3">3</label>
+            <input type="radio" id="uiBedrooms4" name="uiBedrooms" value="4"/>
+            <label for="uiBedrooms4">4</label>
+            <input type="radio" id="uiBedrooms5" name="uiBedrooms" value="5"/>
+            <label for="uiBedrooms5">5</label>
+            <input type="radio" id="uiBedrooms6" name="uiBedrooms" value="6"/>
+            <label for="uiBedrooms6">6</label>
+        </div>
+        <h2>Bathrooms</h2>
+        <div class="switch-field">
+            <input type="radio" id="uiBathrooms1" name="uiBathrooms" value="1" checked/>
+            <label for="uiBathrooms1">1</label>
+            <input type="radio" id="uiBathrooms2" name="uiBathrooms" value="2"/>
+            <label for="uiBathrooms2">2</label>
+            <input type="radio" id="uiBathrooms3" name="uiBathrooms" value="3"/>
+            <label for="uiBathrooms3">3</label>
+        </div>
+    </form>
+    <button class="submit" onclick="onClickedEstimatePrice()" type="button">Estimate Price</button>
+    <div id="uiEstimatedPrice" class="result"> <h2></h2></div>
+</body>
+</html>
