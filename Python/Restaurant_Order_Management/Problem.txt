@@ -1,0 +1,28 @@
+Situation: Restaurant Order Management System
+You are tasked with developing a Restaurant Order Management System for a small local diner. The system should handle multiple customers' orders, compute the total cost, and track which orders have been completed.
+
+Requirements:
+The diner offers a fixed menu with the following items and prices:
+
+Burger: $5.99
+Fries: $2.99
+Drink: $1.99
+Salad: $4.99
+Each customer can order multiple items, and the system should track each customer’s order.
+
+After an order is placed, the system should calculate the total bill for the customer.
+
+The system should also allow the diner staff to mark orders as "completed."
+
+Display a list of pending and completed orders.
+
+Your Task:
+Create a menu system that allows customers to place orders.
+Track orders in a way that associates each customer with their respective order.
+Calculate the total cost of each order.
+Implement functionality to mark orders as completed.
+Display all orders and their statuses (pending or completed).
+Bonus Challenge:
+Add a feature to allow customers to add a tip to their total bill.
+Ensure that the system keeps track of completed orders separately from pending ones.
+This situation will help you practice designing solutions, handling data, and building systems that involve multiple operations.

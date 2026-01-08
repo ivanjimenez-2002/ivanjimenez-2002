@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>actionList_prisoners</class>
+ <widget class="QWidget" name="actionList_prisoners">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1622</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Prisoner List</string>
+  </property>
+  <widget class="QPushButton" name="exit_pushButton">
+   <property name="geometry">
+    <rect>
+     <x>1390</x>
+     <y>520</y>
+     <width>191</width>
+     <height>61</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>11</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="text">
+    <string>Close</string>
+   </property>
+  </widget>
+  <widget class="QTableView" name="Prisoner_tableView">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>50</y>
+     <width>1581</width>
+     <height>411</height>
+    </rect>
+   </property>
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>8</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="editTriggers">
+    <set>QAbstractItemView::NoEditTriggers</set>
+   </property>
+   <property name="horizontalScrollMode">
+    <enum>QAbstractItemView::ScrollPerItem</enum>
+   </property>
+   <attribute name="horizontalHeaderVisible">
+    <bool>true</bool>
+   </attribute>
+   <attribute name="horizontalHeaderCascadingSectionResizes">
+    <bool>false</bool>
+   </attribute>
+   <attribute name="horizontalHeaderDefaultSectionSize">
+    <number>130</number>
+   </attribute>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>exit_pushButton</sender>
+   <signal>clicked()</signal>
+   <receiver>actionList_prisoners</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>1141</x>
+     <y>527</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>958</x>
+     <y>484</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
