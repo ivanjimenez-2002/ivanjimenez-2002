@@ -32,7 +32,7 @@ Python | SQL | JavaScript | TypeScript | HTML | CSS | Excel
 Flask | React (Vite) | TensorFlow | Scikit-learn | Pandas | NumPy  
 
 **Data & Visualization:**  
-Power BI | Matplotlib | OpenPyXL | Pandas  
+Power BI | Matplotlib | OpenPyXL | Pandas | Tableau 
 
 **DevOps & Cloud:**  
 Docker | AWS EC2 | Git | GitHub Actions  
