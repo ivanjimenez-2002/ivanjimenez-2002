@@ -1,0 +1,24 @@
+{
+  "name": "mern-stack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon backend/server.js",
+    "build": "npm install --legacy-peer-deps && npm install --prefix frontend --legacy-peer-deps && npm run build --prefix frontend",
+    "start": "node backend/server.js"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "dotenv": "^16.5.0",
+    "express": "^5.1.0",
+    "mongoose": "^8.15.1",
+    "path-to-regexp": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
