@@ -16,10 +16,10 @@ Passionate about using data and technology to solve problems, build efficient sy
 ---
 
 ## 🏆 Featured Projects  
-🔹 [**House Price Prediction API**](https://github.com/ivanjimenez-2002/ivanjimenez-2002/tree/main/ML_HousePricing_Project)  
+🔹 [**House Price Prediction API**](https://github.com/ivanjimenez-2002/ivanjimenez-2002/tree/main/Data%20Science/ML_HousePricing_Project)  
 _Machine Learning model deployed via Flask API, with a React frontend and Docker on AWS EC2._  
 
-🔹 [**AI Pokemon assistant with RAG**](https://github.com/ivanjimenez-2002/ivanjimenez-2002/tree/main/5-Day%20Gen%20AI%20Intensive%20Course%20with%20Google%20Capstone)  
+🔹 [**AI Pokemon assistant with RAG**](https://github.com/ivanjimenez-2002/ivanjimenez-2002/blob/main/AI/5-Day%20Gen%20AI%20Intensive%20Course%20with%20Google%20Capstone/gen-ai-intensive-course-capstone-2025q1.ipynb)  
 _AI assistant using Gemini API and langchain._  
 
 ---
